@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>관리자 페이지</title>
+    <link rel="stylesheet" href="/static/css/manager/room.css" th:href="@{/css/manager/room.css}">
+    <script th:src="@{/js/manager/room.js}" defer></script>
+</head>
+<body>
+<h1>방 관리 페이지</h1>
+
+<div id="room-adding-container">
+    <section>
+        <div><span>호수</span><input type="number"></div>
+        <div><span>가격</span><input type="number"></div>
+        <div><span>최대 인원수</span><input type="number"></div>
+        <div><span>방 사진</span><input type="file"></div>
+    </section>
+    <input type="button" value="추가하기" onclick="post_room()"/>
+</div>
+<h3>전체 방 목록</h3>
+<div id="room-container">
+
+</div>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>회원가입</title>
+    <link th:href="@{cssTest}" rel="stylesheet" href="/cssTest/register.css">
+    <script th:src="@{/js/test/register.js}" src="/js/test/register.js" defer></script>
+
+</head>
+<body>
+<main>
+    <h1>회원가입</h1>
+    <form name="signup-form">
+        <div id="signup-container">
+            <div class="textForm">
+                <input id="signup-id" type="text" name="userID" placeholder="ID를 입력하세요">
+                <span>'필수 항목입니다'</span>
+            </div>
+            <div class="textForm">
+                <input id="signup-pw" type="password" name="userPW" placeholder="PW를 입력하세요">
+                <span>'필수 항목입니다'</span>
+            </div>
+            <div class="textForm">
+                <input id="signup-pw2" type="password" placeholder="위의 비밀번호를 다시 입력하세요">
+                <span>'필수 항목입니다'</span>
+            </div>
+            <div class="textForm">
+                <input id="signup-name" type="text" name="userName" placeholder="이름">
+                <span>'필수 항목입니다'</span>
+            </div>
+            <div class="textForm">
+                <input type="hidden" name="userTel">
+                <select id=number>
+                    <option>010</option>
+                    <option>070</option>
+                    <option>053</option>
+                    <input id="signup-tel" type="tel" placeholder="휴대폰번호입력">
+                </select>
+                <span>'필수 항목입니다'</span>
+            </div>
+            <div class="textForm">
+                <input type="hidden" name="userEmail">
+                <input id="signup-email" type="email" placeholder="이메일 입력해주세요">
+                <select id="email">
+                    <option value="text">직접입력</option>
+                    <option value="naver.com">naver.com</option>
+                    <option value="gmail.com">gmail.com</option>
+                    <option value="nate.com">nate.com</option>
+                </select>
+                <span>'필수 항목입니다'</span>
+            </div>
+            <div id="signup-buttons">
+                <button id="btn1">처음으로</button>
+                <button id="btn2" onclick="confirm()">확인</button>
+            </div>
+        </div>
+    </form>
+</main>
+
+</body>
+</html>

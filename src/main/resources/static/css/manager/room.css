@@ -1,0 +1,25 @@
+#room-condition > div{
+    display: inline-block;
+}
+
+#room-condition span{
+    border: 1px solid black;
+    background-color: darkred;
+    color: white;
+}
+
+.room-container{
+    display: inline-block;
+    width: 300px;
+    background-color: aliceblue;
+}
+
+.room-container > img{
+    width: 250px;
+}
+
+.room-info-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

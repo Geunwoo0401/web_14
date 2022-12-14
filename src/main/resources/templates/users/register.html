@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>회원가입페이지</title>
+    <link th:href="@{/css/users/register.css}" rel="stylesheet" href="/static/css/users/register.css">
+    <script src="https://kit.fontawesome.com/d19fdaba43.js" crossorigin="anonymous"></script>
+    <script th:src="@{/js/register.js}" src="/static/js/register.js" defer></script>
+</head>
+<body>
+<main>
+    <h1>구매 회원가입</h1>
+    <form name="register-form">
+        <div id="register-container">
+            <span>회원정보를 입력해주세요. 모두 입력하셔야 가입이 가능합니다.</span>
+            <div id="register-input-container">
+
+                <div class="register-input">
+                    <div class="register-input-div">
+                        <input id="register-input-id" type="text" placeholder="ID를 만들어주세요. 띄어쓰기 없이 영/숫자 6-10자" name="userID">
+                        <span></span>
+                    </div>
+                    <div><i class="fa-solid fa-check"></i></div>
+                </div>
+
+                <div class="register-input">
+                    <div class="register-input-div">
+                        <input id="register-input-pw" type="text" placeholder="비밀번호 입력 8-15자의 영문 대소문자, 숫자와 특수문자 조합" name="userPW">
+                        <span></span>
+                    </div>
+                    <div><i class="fa-solid fa-lock"></i></div>
+                </div>
+
+                <div class="register-input">
+                    <div class="register-input-div">
+                        <input id="register-input-pw-re" type="text" placeholder="위의 비밀번호를 다시 입력해주세요">
+                        <span></span>
+                    </div>
+                    <div><i class="fa-solid fa-lock"></i></div>
+                </div>
+
+                <div class="register-input">
+                    <div class="register-input-div">
+                        <input id="register-input-name" type="text" placeholder="이름" name="userName">
+                        <span></span>
+                    </div>
+                    <div><i class="fa-solid fa-check"></i></div>
+                </div>
+
+                <div class="register-input">
+                    <div id="register-select-tel">
+                        <select>
+                            <option value="010" selected>010</option>
+                            <option value="011">011</option>
+                            <option value="018">018</option>
+                            <option value="019">019</option>
+                        </select>
+                    </div>
+
+                    <div class="register-input-div">
+                        <input id="register-input-tel" type="tel" placeholder="휴대폰번호입력">
+                        <span></span>
+                        <input type="tel" name="userTel" hidden>
+                    </div>
+                    <div><i class="fa-solid fa-check"></i></div>
+                </div>
+
+                <div class="register-input">
+                    <div class="register-input-div">
+                        <input id="register-input-email" type="email" placeholder="이메일" >
+                        <span></span>
+                        <input type="email" name="userEmail" hidden>
+                    </div>
+                    <div id="register-select-email">
+                        <select>
+                            <option value="" selected>직접입력</option>
+                            <option value="@naver.com">@naver.com</option>
+                            <option value="@nate.com">@nate.com</option>
+                            <option value="@daum.net">@daum.net</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+    <div id="register-buttons">
+        <button>돌아가기</button>
+        <button>확인</button>
+    </div>
+</main>
+</body>
+</html>

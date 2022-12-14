@@ -1,0 +1,45 @@
+form{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(250,250,250);
+}
+
+
+input{
+    margin: 5px;
+    height: 30px;
+    border: 2px solid darkred;
+}
+a{
+    text-decoration: none;
+    color: blue;
+}
+p{
+    font-size: x-small;
+}
+#login-container{
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    flex-direction: column;
+}
+#login-sub-container{
+    display: flex;
+    margin: 30px;
+    font-size: small;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#login-auto-container{
+    display: flex;
+    align-items: center;
+}
+
+a{
+    color: black;
+    background-color: lightgray;
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 5% 5% 5% 5%;
+}
